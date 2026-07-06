@@ -9,4 +9,4 @@ Personal portfolio website showcasing my projects, technical skills, and achieve
 - JavaScript
 
 ## Live Website
-https://niyatijain200511.github.io/portfolio/
+https://niyatijain200511.github.io/niyati-portfolio/
