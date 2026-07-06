@@ -412,25 +412,26 @@ button:focus-visible {
 }
 
 /* ==========================================================================
-   EXPERIENCE
+   CERTIFICATIONS & COURSES
    ========================================================================== */
-.experience-card {
+.certification-card {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 2rem;
   display: flex;
   gap: 1.5rem;
+  height: 100%;
   box-shadow: var(--card-shadow);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.experience-card:hover {
+.certification-card:hover {
   box-shadow: var(--card-shadow-hover);
   transform: translateY(-4px);
 }
 
-.experience-logo {
+.certification-icon {
   flex-shrink: 0;
   width: 64px;
   height: 64px;
@@ -443,7 +444,13 @@ button:focus-visible {
   font-size: 1.6rem;
 }
 
-.experience-top {
+.certification-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.certification-top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -452,13 +459,13 @@ button:focus-visible {
   margin-bottom: 1rem;
 }
 
-.experience-company {
+.certification-provider {
   color: var(--text-secondary);
   margin: 0;
   font-size: 0.95rem;
 }
 
-.experience-badge {
+.certification-badge {
   background: var(--accent-light);
   color: var(--accent);
   font-size: 0.78rem;
@@ -468,26 +475,9 @@ button:focus-visible {
   white-space: nowrap;
 }
 
-.experience-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 0.6rem;
-}
-
-.experience-list li {
-  color: var(--text-secondary);
-  font-size: 0.97rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 0.6rem;
-}
-
-.experience-list i {
-  color: var(--accent);
-  margin-top: 0.2rem;
-  font-size: 0.9rem;
+.certification-body .btn {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 /* ==========================================================================
